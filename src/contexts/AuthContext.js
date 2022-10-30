@@ -50,7 +50,7 @@ export default function AuthProvider({ children }) {
       setLoading(false)
     })
     return unsubscribe
-  })
+  }, [])
 
   const value = {
     currentUser,
