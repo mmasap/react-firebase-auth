@@ -32,9 +32,9 @@ export default function ForgotPassword() {
           {error && <Alert variant="danger">{error}</Alert>}
           {message && <Alert variant="success">{message}</Alert>}
           <Form onSubmit={handleSubmit}>
-            <Form.Group id="email">
+            <Form.Group id="email" className="mb-3">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" ref={emailRef} required></Form.Control>
+              <Form.Control type="email" ref={emailRef} required />
             </Form.Group>
             <Form.Group id="password"></Form.Group>
             <Button disabled={loading} className="w-100" type="submit">
