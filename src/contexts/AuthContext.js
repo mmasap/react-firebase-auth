@@ -37,11 +37,11 @@ export default function AuthProvider({ children }) {
   }
 
   function updateEmail(email) {
-    return updateFirebaseEmail(auth, email)
+    return updateFirebaseEmail(currentUser, email)
   }
 
   function updatePassword(password) {
-    return updateFirebasePassword(auth, password)
+    return updateFirebasePassword(currentUser, password)
   }
 
   useEffect(() => {
